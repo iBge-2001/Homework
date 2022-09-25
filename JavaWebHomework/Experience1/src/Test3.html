@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td id="font1">苹果手机</td>
+        <td><input type="button" onclick="hide();" value="删除" /></td>
+        <td><input type="button" onclick="show();" value="恢复" /></td>
+</table>
+<script>
+    function hide() {
+        if (confirm("确定要删除吗？"))
+            var font1 = document.getElementById("font1");
+        font1.style.visibility = "hidden ";
+    }
+
+    function show() {
+        var font1 = document.getElementById("font1");
+        font1.style.visibility = "visible";
+    }
+</script>
+</body>
+</html>
